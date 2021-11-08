@@ -76,7 +76,7 @@ class ProductsItems extends StatelessWidget {
             title: Text(
               pro.title,
               textAlign: TextAlign.center,
-              style: const TextStyle(color: Colors.green, fontSize: 10),
+              style: const TextStyle(color: Colors.amber, fontSize: 11),
             ),
           ),
         ),
