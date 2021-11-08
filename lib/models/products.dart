@@ -11,10 +11,10 @@ class Products with ChangeNotifier {
     required this.imageUrl,
     required this.price,
     required this.title,
-    this.isFav = true,
+    this.isFav = false,
   });
   void toggleFavoriteStatus() {
-    // isFav = !isFav;
+    isFav = !isFav;
     notifyListeners();
   }
 }

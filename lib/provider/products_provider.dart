@@ -23,11 +23,16 @@ class Productss with ChangeNotifier {
   ];
   // var _showFav = false;
   // var _showAll = true;
+
   List<Products> get items {
     // if (_showFav) {
     //   return _items.where((proItem) => proItem.isFav).toList();
     // }
     return [..._items];
+  }
+
+  List<Products> get fav {
+    return _items.where((ele) => ele.isFav).toList();
   }
 
   // void showFav() {

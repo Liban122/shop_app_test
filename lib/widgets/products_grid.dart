@@ -14,7 +14,7 @@ class ProductsGrid extends StatelessWidget {
     //in provider.dart file
 
     final productData = Provider.of<Productss>(context);
-    final producs = productData.items;
+    final producs = showFav ? productData.fav : productData.items;
 // Here we import the ProductsItem class (Each product shape) then
 // we Loop through it using ProductItem widget which specifies how
 // each product will look and fetch the data from Productss using
@@ -30,10 +30,10 @@ class ProductsGrid extends StatelessWidget {
       itemBuilder: (ctx, i) => ChangeNotifierProvider.value(
         value: producs[i],
         child: ProductsItems(
-          producs[i].id,
-          producs[i].imageUrl,
-          producs[i].title,
-        ),
+            // producs[i].id,
+            // producs[i].imageUrl,
+            // producs[i].title,
+            ),
       ),
     );
   }

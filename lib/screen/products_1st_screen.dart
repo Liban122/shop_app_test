@@ -26,16 +26,6 @@ class _ProductsScreenState extends State<ProductsScreen> {
         ),
         actions: <Widget>[
           PopupMenuButton(
-            itemBuilder: (_) => [
-              const PopupMenuItem(
-                child: Text("Favorites"),
-                value: Filter.favorite,
-              ),
-              const PopupMenuItem(
-                child: Text("Show All"),
-                value: Filter.all,
-              ),
-            ],
             onSelected: (Filter selected) {
               setState(
                 () {
@@ -47,6 +37,17 @@ class _ProductsScreenState extends State<ProductsScreen> {
                 },
               );
             },
+            itemBuilder: (_) => [
+              const PopupMenuItem(
+                child: Text("Favorites"),
+                value: Filter.favorite,
+              ),
+              const PopupMenuItem(
+                child: Text("Show All"),
+                value: Filter.all,
+              ),
+            ],
+
             // icon: Icon(Icons.more_vert),
           ),
         ],
