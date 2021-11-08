@@ -52,7 +52,7 @@ class _ProductsScreenState extends State<ProductsScreen> {
         ],
       ),
       body: Container(
-        margin: const EdgeInsets.only(top: 40),
+        margin: const EdgeInsets.only(top: 30),
         child: ProductsGrid(_showFav),
       ),
     );
