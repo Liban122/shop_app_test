@@ -73,7 +73,7 @@ class ProductsItems extends StatelessWidget {
                 icon: Icon(Icons.shopping_cart),
               ),
             ),
-            backgroundColor: Colors.black26,
+            backgroundColor: Colors.black,
             title: Text(
               pro.title,
               textAlign: TextAlign.center,
